@@ -1,0 +1,19 @@
+<section class="pb-28 pt-12 ">
+    <div class="horizontal-padding ">
+        <h1 class=" text-flame-600 text-center text-4xl font-semibold">Frameworks</h1>
+        <div class=" w-1/2 mt-6">
+            <p class=" text-3xl sm:text-2xl md:text-2xl lg:text-3xl font-medium opacity-80">
+                Automate <span class="text-5xl sm:text-3xl md:text-3xl lg:text-4xl">RISKED-BASED COMPLIANCE</span> with recognized industry standards
+            </p>
+            <p class="mt-4 opacity-80">
+                Covenda's AI threat modeling and control mapping offers a trustworthy foundation for all businesses to comply with security and privacy standards, regulations, or policies relevant to you.
+            </p>
+        </div>
+        <div class=" grid grid-cols-3 gap-4 mt-4">
+            <div *ngFor="let framework of frameworks; index as i; " class="p-6 rounded-md shadow-md hover:shadow-2xl">
+                <div class=" flex justify-center"><img width="50" src="assets/frameworks/{{ i+1 }}.png" alt=""></div>
+                <p class=" opacity-80 text-center mt-3 text-sm">{{framework}}</p>
+            </div>
+        </div>
+    </div>
+</section>
