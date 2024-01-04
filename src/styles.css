@@ -1,1 +1,90 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Circular';
+    font-weight: 300;
+    font-style: normal;
+    src: url('./assets/fonts/Euclid_Circular_B_Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Circular';
+    font-weight: 400;
+    font-style: normal;
+    src: url('./assets/fonts/Euclid_Circular_B_Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Circular';
+    font-weight: 500;
+    font-style: normal;
+    src: url('./assets/fonts/Euclid_Circular_B_Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Circular';
+    font-weight: 600;
+    font-style: normal;
+    src: url('./assets/fonts/Euclid_Circular_B_SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Circular';
+    font-weight: 700;
+    font-style: normal;
+    src: url('./assets/fonts/Euclid_Circular_B_Bold.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'DMSANS';
+    font-weight: 300;
+    font-style: normal;
+    src: url('./assets/fonts/DMSAN/DMSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DMSANS';
+    font-weight: 400;
+    font-style: normal;
+    src: url('./assets/fonts/DMSAN/DMSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DMSANS';
+    font-weight: 500;
+    font-style: normal;
+    src: url('./assets/fonts/DMSAN/DMSans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DMSANS';
+    font-weight: 600;
+    font-style: normal;
+    src: url('./assets/fonts/DMSAN/DMSans-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DMSANS';
+    font-weight: 700;
+    font-style: normal;
+    src: url('./assets/fonts/DMSAN/DMSans-Bold.ttf') format('truetype');
+}
+
+
+.horizontal-padding {
+    @apply sm:px-edge-space-sm md:px-edge-space-sm lg:px-edge-space-sm xl:px-edge-space-sm 2xl:px-edge-space 3xl:px-edge-space max-w-[1535px] mx-auto
+}
+
+@layer base {
+    html {
+        @apply font-circular
+    }
+    
+    .nav-link {
+        @apply h-full  font-medium flex flex-col justify-center hover:text-flame-700 text-sm
+    }
+}
