@@ -1,0 +1,49 @@
+<nav
+    class="bg-white h-20 left-0 top-0 right-0 drop-shadow sm:hidden md:hidden lg:block xl:block 2xl:block 3xl:block fixed w-full z-50">
+    <div class="horizontal-padding h-full flex flex-col justify-center">
+        <div class="flex flex-row gap-20">
+            <div class="h-full flex">
+                <img src="assets/logo.svg" alt="My Logo">
+            </div>
+            <div class=" flex flex-col  justify-center">
+                <ul class="flex-grow flex gap-14 font-medium">
+                    <a href="#solutions" class="nav-link">Solution</a>
+                    <a href="#features" class="nav-link" >Features</a>
+                    <a href="#howitworks" class="nav-link">How it Works</a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<nav
+    class="bg-white  h-20 left-0 top-0 right-0 drop-shadow  sm:block md:block lg:block xl:hidden 2xl:hidden 3xl:hidden fixed w-full z-50">
+    <div class="horizontal-padding h-full flex flex-col justify-center">
+        <div class="flex flex-row gap-20">
+            <div class="h-full flex">
+                <img src="assets/logo.svg" alt="My Logo">
+            </div>
+            <div class=" flex flex-col justify-center items-end flex-grow">
+                <ul class="flex-grow flex gap-14 font-medium">
+                    <a (click)="drawerOpen=true" href="#" class="nav-link"><fa-icon [icon]="faBars"></fa-icon></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<nav
+    class="fixed z-50 h-full top-0 right-0 bg-flame-700 py-4 transition-all ease-in-out duration-700 {{drawerOpen?'w-60':'w-0'}}">
+    <div class="px-2 pb-2 flex justify-end">
+        <a (click)="drawerOpen=false" href="#" class="nav-link text-white font-semibold text-lg"><fa-icon
+                [icon]="faClose"></fa-icon></a>
+    </div>
+    <div class="">
+        <ul class="flex-grow flex flex-col  divide-y divide-flame-500 text-white border-t border-b border-flame-500">
+            <a href="#solutions" class=" py-2 px-2">Solution</a>
+            <a href="#features" class="py-2 px-2">Features</a>
+            <a href="#howitworks" class="py-2 px-2">How it Works</a>
+        </ul>
+    </div>
+</nav>

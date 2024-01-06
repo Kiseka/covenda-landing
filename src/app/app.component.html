@@ -1,40 +1,22 @@
-<nav
-  class="bg-white h-20 left-0 top-0 right-0 drop-shadow sm:hidden md:hidden lg:hidden xl:block 2xl:block 3xl:block fixed w-full z-50">
-  <div class="horizontal-padding h-full flex flex-col justify-center">
-    <div class="flex flex-row gap-20">
-      <div class="h-full flex">
-        <img src="assets/logo.svg" alt="My Logo">
-      </div>
-      <div class=" flex flex-col  justify-center">
-        <ul class="flex-grow flex gap-14 font-medium">
-          <a href="/" class="nav-link">Solution</a>
-          <a class="nav-link" href="/faq">Features</a>
-          <a href="/contact" class="nav-link">How it Works</a>
-        </ul>
-      </div>
-    </div>
-  </div>
-</nav>
+<app-header-section></app-header-section>
 
 <section style="background-image: url('assets/cta-circles-complete.png'); "
-  class=" bg-flame-500  bg-contain bg-right bg-no-repeat ">
+  class=" bg-flame-500 sm:!bg-none md:!bg-none bg-contain bg-right bg-no-repeat your-container-class">
   <div class=" horizontal-padding mt-20 pt-20 pb-28">
     <div class="">
-      <div
-        class=" grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-3 2xl:grid-cols-3 3xl:grid-cols-3 gap-8">
-        <div class=" col-span-2 ">
-          <h1 class=" font-bold text-2xl opacity-90">CYBERSECURITY RISKS ARE PREVENTABLE</h1>
-          <h1 class="text-white text-5xl sm:text-3xl md:text-3xl lg:text-4xl font-bold mt-3">
-            Predict <span class=" text-7xl sm:text-5xl md:text-5xl lg:text-6xl">CYBER ATTACKS</span>
+      <div class=" flex sm:justify-center md:justify-center sm:text-center md:text-center">
+        <div class=" w-2/3 sm:w-full md:w-full">
+          <h1 class=" font-bold text-2xl sm:text-lg md:text-lg lg:text-xl xl:text-xl opacity-90">CYBERSECURITY RISKS ARE
+            PREVENTABLE</h1>
+          <h1 class="text-white text-5xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-3xl font-bold mt-3">
+            Predict <span class=" text-7xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-3xl">CYBER ATTACKS</span> <br>
             and protect your business from cyber threats
           </h1>
-          <p class=" text-white opacity-95 text-lg mt-4 w-1/2 text-justify">
+          <p
+            class=" text-white opacity-95 text-lg mt-4 sm:mt-2 md:mt-2 sm:text-sm md:text-sm w-2/3 sm:w-full md:w-full">
             Our proprietary risk prediction and AI-powered threat intelligence help you prioritize the best decisions,
             from people to systems.
           </p>
-        </div>
-        <div class="top-0 right-0  w-full flex justify-end sm:hidden md:hidden lg:hidden z-10   ">
-          <!-- <Image class="w-80 rounded-full" alt="img" src={group}></Image> -->
         </div>
       </div>
     </div>
@@ -42,14 +24,15 @@
 </section>
 
 
-<section class="py-28 horizontal-padding">
-  <h1 class=" text-flame-600 text-center text-4xl font-semibold">Next-gen solutions for cyber attacks</h1>
-  <div class="flex justify-center w-full mt-5 h-80">
-    <div class=" grid grid-cols-3 w-3/4 gap-2 absolute">
+<section id="solutions" class="py-28 horizontal-padding">
+  <h1 class=" text-flame-600 text-center text-4xl sm:text-xl md:text-xl lg:text-2xl xl:text-3xl font-semibold">Next-gen
+    solutions for cyber attacks</h1>
+  <div class="flex justify-center w-full mt-5">
+    <div class=" grid grid-cols-3 sm:grid-cols-1 md:grid-cols-1 w-3/4 sm:w-full md:w-full lg:w-full xl:w-4/5 gap-2">
       <div class="">
         <div
-          class="px-5 h-80 my-4 mx-3 pt-16 pb-12 rounded-lg shadow-md flex flex-col gap-14 hover:shadow-2xl hover:h-full hover:bg-flame-600  hover:text-white hover:my-0 hover:mx-0 duration-700 group">
-          <div class="flex justify-center items-center h-3/4">
+          class="px-5 h-80 sm:h-auto md:h-auto py-14 sm:py-5 md:py-5 flex flex-col sm:flex-row md:flex-row my-4 mx-3  rounded-lg shadow-md gap-14 hover:shadow-2xl hover:h-full hover:bg-flame-600  hover:text-white hover:my-0 hover:mx-0 duration-700 group">
+          <div class="flex justify-center items-center h-3/4 sm:h-full md:h-full">
             <img
               class="w-24 h-24  transition-opacity duration-300 opacity-100 group-hover:opacity-0 group-hover:absolute"
               src="assets/Artboard.png" alt="">
@@ -57,7 +40,7 @@
               class="w-24 h-24 absolute transition-opacity duration-300 opacity-0 group-hover:opacity-100 group-hover:static"
               src="assets/hoverArtboard.png" alt="">
           </div>
-          <div>
+          <div class="flex flex-col justify-center">
             <p class=" text-center font-medium">
               Orchestrate your Cyber Security & Privacy Response
             </p>
@@ -67,8 +50,8 @@
 
       <div class="">
         <div
-          class="px-5 h-80 my-4 mx-3 pt-16 pb-12 rounded-lg shadow-md flex flex-col gap-14 hover:shadow-2xl hover:h-full hover:bg-flame-600  hover:text-white hover:my-0 hover:mx-0 duration-700 group">
-          <div class="flex justify-center items-center h-3/4">
+          class="px-5 h-80 sm:h-auto md:h-auto py-14 sm:py-5 md:py-5 flex flex-col sm:flex-row md:flex-row my-4 mx-3  rounded-lg shadow-md gap-14 hover:shadow-2xl hover:h-full hover:bg-flame-600  hover:text-white hover:my-0 hover:mx-0 duration-700 group">
+          <div class="flex justify-center items-center h-3/4 sm:h-full md:h-full">
             <img
               class="w-24 h-24  transition-opacity duration-300 opacity-100 group-hover:opacity-0 group-hover:absolute"
               src="assets/Artboard2.png" alt="">
@@ -76,17 +59,18 @@
               class="w-24 h-24 absolute transition-opacity duration-300 opacity-0 group-hover:opacity-100 group-hover:static"
               src="assets/hoverArtboard2.png" alt="">
           </div>
-          <div>
+          <div class="flex flex-col justify-center">
             <p class=" text-center font-medium">
               Know Your Control (KYC) against Cyber Threats
             </p>
           </div>
         </div>
       </div>
+
       <div class="">
         <div
-          class="px-5 h-80 my-4 mx-3 pt-16 pb-12 rounded-lg shadow-md flex flex-col gap-14 hover:shadow-2xl hover:h-full hover:bg-flame-600  hover:text-white hover:my-0 hover:mx-0 duration-700 group">
-          <div class="flex justify-center items-center h-3/4">
+          class="px-5 h-80 sm:h-auto md:h-auto py-14 sm:py-5 md:py-5 flex flex-col sm:flex-row md:flex-row my-4 mx-3  rounded-lg shadow-md gap-14 hover:shadow-2xl hover:h-full hover:bg-flame-600  hover:text-white hover:my-0 hover:mx-0 duration-700 group">
+          <div class="flex justify-center items-center h-3/4 sm:h-full md:h-full">
             <img
               class="w-24 h-24  transition-opacity duration-300 opacity-100 group-hover:opacity-0 group-hover:absolute"
               src="assets/Artboard3.png" alt="">
@@ -94,13 +78,14 @@
               class="w-24 h-24 absolute transition-opacity duration-300 opacity-0 group-hover:opacity-100 group-hover:static"
               src="assets/hoverArtboard3.png" alt="">
           </div>
-          <div>
+          <div class="flex flex-col justify-center">
             <p class=" text-center font-medium">
               Orchestrate your Cyber Security & Privacy Response
             </p>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
